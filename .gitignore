@@ -1,3 +1,8 @@
+
+# Created by https://www.toptal.com/developers/gitignore/api/yarn,node,vscode
+# Edit at https://www.toptal.com/developers/gitignore?templates=yarn,node,vscode
+
+### Node ###
 # Logs
 logs
 *.log
@@ -111,15 +116,28 @@ dist
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
 
-### VisualStudioCode ###
+### vscode ###
 .vscode/*
+!.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
+!.vscode/extensions.json
 *.code-workspace
 
-### VisualStudioCode Patch ###
-# Ignore all local history of files
-.history
-.ionide
+### yarn ###
+# https://yarnpkg.com/advanced/qa#which-files-should-be-gitignored
 
-# End of https://www.toptal.com/developers/gitignore/api/node,visualstudiocode
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+
+# if you are NOT using Zero-installs, then:
+# comment the following lines
+!.yarn/cache
+
+# and uncomment the following lines
+# .pnp.*
+
+# End of https://www.toptal.com/developers/gitignore/api/yarn,node,vscode
